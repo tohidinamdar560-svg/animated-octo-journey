@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f3">
+  <title>SHREE AARAMBH FLEX | Billing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .metric-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .bill-items { min-width: 930px; }
+    @media (max-width: 1080px) { .metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 760px) { .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="SHREE AARAMBH FLEX dashboard"><span class="brand-mark">SA<span>+</span></span><span class="brand-copy"><strong>SHREE AARAMBH</strong><small>FLEX & SIGN STUDIO</small></span></a>
+      <div class="shop-status"><span class="status-dot"></span> Billing workspace</div>
+      <nav class="nav-list" id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom"><div class="shop-card"><span class="shop-card-label">YOUR SHOP</span><strong>SHREE AARAMBH FLEX</strong><span>7057389090</span></div><button class="nav-link" data-page="settings"><span class="nav-icon">⚙</span><span data-i18n="settings">Settings</span></button></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><button class="mobile-menu icon-button" id="menu-toggle" aria-label="Open menu">☰</button><div class="breadcrumb"><span>SHREE AARAMBH FLEX</span><b>/</b><strong id="page-title">Overview</strong></div><div class="top-actions"><span class="date-chip" id="today-label"></span><button class="language-switch" id="language-toggle" aria-label="Switch language">मराठी</button><button class="avatar" title="SHREE AARAMBH FLEX">SA</button></div></header>
+      <main class="page-content" id="page-content"></main>
+    </div>
+  </div>
+  <div class="mobile-scrim" id="mobile-scrim"></div><div class="toast" id="toast" role="status" aria-live="polite"></div><input type="file" id="import-file" accept="application/json,.json" hidden>
+  <script src="app.js"></script>
+</body>
+</html>
